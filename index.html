@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Marcos Francesquini</title>
+    <link rel="stylesheet" href="style.css" /> <!-- CSS separado -->
+</head>
+
+<body class="light-mode">
+    <!-- Botão para alternar entre modo claro e escuro -->
+    <button id="toggle-theme">Alternar Tema</button>
+
+    <header>
+        <h1>Marcos Francesquini</h1>
+        <p>Full Stack Developer | Software Engineering | Java | Ruby on Rails | PHP | MERN</p>
+        <div class="links">
+            <a href="https://github.com/marcosfrancesquini" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/marcos-c-francesquini/" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>Sobre Mim</h2>
+        <p>Desenvolvedor de software com experiência em projetos web, focado em soluções modernas e usabilidade.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li><strong>HTML</strong> - Avançado</li>
+            <li><strong>CSS</strong> - Avançado</li>
+            <li><strong>JavaScript</strong> - Intermediário</li>
+            <li><strong>React</strong> - Intermediário</li>
+            <li><strong>Node.js</strong> - Básico</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>Projetos</h2>
+        <table class="projects-table">
+            <tr>
+                <td>
+                    <img src="img/andrea.jpg" alt="logo andrea assessoria italiana e portuguesa">
+                    <h3>Andrea Ribeiro Cidadania</h3>
+                    <p>Tecnologias: HTML, CSS, JS</p>
+                    <a href="#">Ver site</a> | <a href="sigilo.html">GitHub</a>
+                </td>
+                <td>
+                    <img src="img2.jpg" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Tecnologias: React, Node.js</p>
+                    <a href="#">Ver site</a> | <a href="#">GitHub</a>
+                </td>
+                <td>
+                    <img src="img3.jpg" alt="Projeto 3">
+                    <h3>Projeto 3</h3>
+                    <p>Tecnologias: Vue, Firebase</p>
+                    <a href="#">Ver site</a> | <a href="#">GitHub</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img4.jpg" alt="Projeto 4">
+                    <h3>Projeto 4</h3>
+                    <p>Tecnologias: Django, PostgreSQL</p>
+                    <a href="#">Ver site</a> | <a href="#">GitHub</a>
+                </td>
+                <td>
+                    <img src="img5.jpg" alt="Projeto 5">
+                    <h3>Projeto 5</h3>
+                    <p>Tecnologias: Next.js, Tailwind</p>
+                    <a href="#">Ver site</a> | <a href="#">GitHub</a>
+                </td>
+                <td>
+                    <img src="img6.jpg" alt="Projeto 6">
+                    <h3>Projeto 6</h3>
+                    <p>Tecnologias: Flask, SQLite</p>
+                    <a href="#">Ver site</a> | <a href="#">GitHub</a>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="contact">
+        <h2>Contato</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Marcos Francesquini. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Script para alternar entre tema claro e escuro
+        const toggle = document.getElementById('toggle-theme');
+        const body = document.body;
+        toggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+        });
+    </script>
+</body>
+
+</html>
